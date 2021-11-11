@@ -1,0 +1,169 @@
+.table{
+  width: 86%;
+  margin-left: 60px;
+}
+.fonte_t_0{
+  color:rgb(129, 122, 122);
+  font-size: 16px;
+  background-color: #ebebeba9;
+  font-family: arial;
+  width: 50%;
+}
+.fonte_t_1{
+  color: #16254c;
+  font-size: 16px;
+  background-color: rgb(223, 223, 223);
+  font-family: arial;
+  border-style: ridge;
+} 
+/*Menu dos Docentes ------------------------------------------------------*/
+.docentes{
+  background-color: white;
+  opacity: 0.9;
+  width: 30%;
+  height: 13%;
+  float: left;
+  border-radius: 5px;
+  margin-top: 2%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+.docentes_nome{
+  font-family: arial;
+  color: #16254c;
+  font-weight: bold;
+  font-size: 90%;
+  margin-top: -95px;
+  margin-left: 33%;
+}
+.docentes_info{
+  font-family: arial;
+  color: #16254c;
+  font-weight: bold;
+  font-size: 70%;
+  margin-right: 70px;
+  margin-left: 33%;
+}
+.fotoinfra{
+  background-color: #16254cda;
+  margin-top: 130px;
+  margin-left: 150px;
+  padding: 13px;
+  position: absolute;
+  z-index: 2;
+  display: none;
+}
+.spanM{
+  font-family: arial;
+  font-size: 16px;
+  color: #16254c;
+  margin-left: 60px;
+  margin-right: 130px;
+  text-align: justify;
+}
+
+.noticia{
+  float: left;
+  margin-left: 200px;
+  position: absolute;
+}
+.fontee{
+  font-family: arial;
+  font-size: 16px;
+  color: rgba(255, 255, 255, 0.808);
+  margin-left: 60px;
+  margin-right: 130px;
+  text-align: justify;
+}
+.alunos{
+  background-color: rgba(216, 216, 216, 0.685);
+  width: 350px;
+  height: 140px;
+  margin-left: 59px;
+  border-radius: 10px;
+  margin-top: 2%;
+  float: left;
+}
+.alunos_com{
+  margin-left: 14px;
+  margin-right: 14px;
+  color: #16254c;
+  font-family: arial;
+  font-size: 15px;
+  text-align: justify;
+}
+.perguntas{
+  margin-top: 70px;
+  margin-left: 60px;
+  width: 42%;
+  height: 50px;
+  background-color: rgba(221, 217, 217, 0.685);
+  font-size: 9px;
+  font-family: arial;
+  color: #f44f22;
+  border-radius: 5px;
+  float: center;
+}
+.resposta{
+  margin-top: 70px;
+  margin-left: 60px;
+  width: 36%;
+  height: 60px;
+  background-color: rgba(199, 199, 199, 0.712);
+  font-size: 6px;
+  font-family: arial;
+  color: #16254c;
+  border-radius: 5px;
+  position: absolute;
+  text-align: justify;
+}
+.vagas{
+  color: #ebebeb;
+  float: left;
+  font-family: arial;
+  font-size: 20px;
+  margin-left: 60px;
+}
+.vagas:hover{
+  background-color: #ffdd21;
+}
+.link{
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.719);
+  font-family: arial;
+}
+/*Lista Azul-------------------------------------------------------------------*/
+#menu_esqueda a:link, a:visited {
+  font-family: arial;
+  font-size: 17px; 
+  color: white;
+  cursor: pointer;
+}
+
+#menu_esqueda ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #16254c;
+  width: 100%;
+}
+
+#menu_esqueda li  {
+  float: center;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #e6e4e457;
+}
+
+#menu_esqueda li a {
+  display: block;
+  color: white;
+  text-align: left;
+  padding: 15px;
+  text-decoration: none;
+}
+
+#menu_esqueda li a:hover {
+  background-color: #ffdd21;
+}

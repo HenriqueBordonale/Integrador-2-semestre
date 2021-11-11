@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Engenharia de Software - UNAERP</title>
+		<link rel="shortcut icon" href="Imagens/icone.png">
+		<link rel="stylesheet" type="text/css" href="home.css"> 
+
+		<style>			
+		  #cabecalho {  
+			height: 100%;
+			background-color: #ffdd21;
+			border-color: rgb(209, 208, 208);
+		   }
+		  #menu_esqueda {
+			float: left;
+			margin-left: -8px;
+			background-color:#16254c;
+			height: 10700px;
+			width: 14%;
+		   }
+		  #Informacoes{
+			float: right;
+			width: 86%; 
+			height: 100%;
+			margin-right: -8px;
+			background-color: #ebebeb;
+		   }
+		  #Grade{
+			float: right;
+			width: 86%;
+			height: 100%;
+			margin-right: -8px;
+			background-color: #ebebeb;
+		   }
+		  #Docentes{
+			float: right;
+			width: 86%;
+			height: 800px;
+			margin-right: -8px;
+			background-color: #16254c;
+		   }
+		  #Infra{
+			float: right;
+			width: 86%;
+			height: 100%;
+			margin-right: -8px;
+			background-color: #ebebeb;
+		   }
+		  #Eventos{
+			float: right;
+			width: 86%;
+			height: 100%;
+			margin-right: -8px;
+			background-color: #16254c;
+		   }
+		  #Alunos{
+			float: right;
+			width: 86%;
+			height: 1200px;
+			margin-right: -8px;
+			background-color: #ebebeb;
+		   }
+		  #Mais{
+			float: right;
+			width: 86%;
+			height: 100%;
+			margin-right: -8px;
+			background-color: #16254c;
+		   }
+			/*-----------Fontes------------------>*/
+		  .fontep{
+			font-family: arial;
+			font-size: 16px;
+			color: rgb(105, 100, 100);
+			margin-left: 60px;
+			margin-right: 130px;
+			text-align: justify;
+		   }
+		  .fontem{
+			z-index: 1;
+			font-family:Arial;
+			color: #16254c;
+			margin-left: 60px;
+			opacity: 0.9;
+			font-size: 20px;
+			margin-top: 20px;
+		   }
+		  .fonteg{
+			font-family: Arial; 
+			color: #ffdd21;
+			text-shadow: 1px 1px black;
+			margin-left: 60px;
+			opacity: 0.9;
+		   }		
+		</style>
+		
+	</head>
+		<body style="background-color: #ffdd21;">
+			<a href="#top"><img onclick="ocultar(btnTopo)" id="topo" style="position: fixed; margin-left: 94%;display: none;;margin-top:44%;" src="Imagens/ss.png" height="65" width="65"></a>
+			<div id="cabecalho"> 
+				<img src="Imagens/cabecalho.jpg" width="100%">
+			</div>
+			<div class="geral">
+					<div id="menu_esqueda">
+							<ul>
+								<li onclick="ocultar(btnTopo)"><a href="#Informacoes">Informacoes sobre o curso</a></li>
+								<li onclick="mostrar(btnTopo)"><a href="#Grade">Grade Curricular</a></li>
+								<li onclick="mostrar(btnTopo)"><a href="#Docentes">Docentes</a></li>
+								<li onclick="mostrar(btnTopo)"><a href="#Infra">Infraestrutura</a></li>
+								<li onclick="mostrar(btnTopo)"><a href="#Eventos">Eventos</a></li>
+								<li onclick="mostrar(btnTopo)"><a href="#Alunos">Alunos</a></li>
+								<li onclick="mostrar(btnTopo)"><a href="#Mais">+ Info</a></li>
+							</ul>
+						</div>
+				<div onmouseover="ocultar(btnTopo)" id="Informacoes">
+					<h1 class="fonteg">INFORMAÇÕES DO CURSO</h1>
+					<h2 class="fontem">Perfil do Curso</h2>
+					<h1 class="fontep">O curso de Engenharia de Software da Unaerp forma profissionais com habilidades e competências para atuar no mercado de trabalho de 
+									  Tecnologia da Informação para desenvolver softwares e programas computacionais, elaborar e testar novos programas, fazer manutenção
+									  e atualização em sistemas já implantados, criar aplicativos, games, plataformas digitais para atividades de ensino e sistemas específicos
+									  para maximizar o desempenho e a produtividade de uma empresa. O profissional também poderá atuar em empresas públicas ou privadas, na área
+									  de inovação, em startups e em grandes empresas de tecnologia da informação. O curso foca na tecnologia da informação como ferramenta para o
+									  desenvolvimento de softwares, sistemas web, aplicativos e games e também para a realização de testes e controle de 
+									  qualidade na produção de software.</h1></left>       
+					<h2 class="fontem">Qualidades</h2>	  
+					<ol	style="list-style-type: disc;text-align: justify; margin-left: 40px;">
+						<strong><li style="color: rgb(105, 100, 100);font-family: arial;font-size: 16px;margin-right: 130px;">Matriz curricular, corpo docente experiente e titulado e infraestrutura moderna garantem uma sólida formação para atendimento ao mercado de trabalho.</li></strong>
+						<strong><li style="color: rgb(105, 100, 100);font-family: arial;font-size: 16px;margin-right: 130px;">Estágio nos Laboratórios de Informática para Atividades de Pesquisa e Ensino (LIAPE) e no Centro de Informática e Tecnologia (CIT) da Universidade.</li></strong>
+						<strong><li style="color: rgb(105, 100, 100);font-family: arial;font-size: 16px;margin-right: 130px;">Convênios de estágios com as principais empresas da cidade e região.</li></strong>
+						<strong><li style="color: rgb(105, 100, 100);font-family: arial;font-size: 16px;margin-right: 130px;">Parcerias acadêmicas com a Oracle (membro do programa Oracle Academy), Microsoft (convênio Imagine) e Associação Brasileira de Melhoria em TI – ABRAMTI (convênio para realização de exames de certificações na área de qualidade de software).</li></strong>
+						<strong><li style="color: rgb(105, 100, 100);font-family: arial;font-size: 16px;margin-right: 130px;">O curso abordará os principais fundamentos da computação com foco na construção, no gerenciamento e na manutenção de softwares.</li></strong>
+						<strong><li style="color: rgb(105, 100, 100);font-family: arial;font-size: 16px;margin-right: 130px;">Convênio com importantes empresas de desenvolvimento de software para alinhamento das tecnologias a serem utilizadas no curso, bem como para recrutamento de talentos.</li></strong>
+						<strong><li style="color: rgb(105, 100, 100);font-family: arial;font-size: 16px;margin-right: 130px;">Mercado de trabalho em expansão com alta empregabilidade.</li></strong>
+					</ol>
+					<h1 class="fontem">Vídeo</h1>
+					<iframe style="margin-left: 65px;" width="720" height="440" src="https://www.youtube.com/embed/_E1-cyBRVFs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+				</div>
+				<div onmouseover="mostrar(btnTopo)" id="Grade">
+					<h1 class="fonteg">Grade Curricular</h1>
+					<table class="table">
+						<tr>
+							<th class="fontem" style="text-align: left;font-size: 24px;">DISCIPLINAS</th>
+						</tr>	
+						<tr>
+							<td title="33 HORAS" class="fonte_t_0">ARQUITETURA E ORGANIZAÇÃO DE COMPUTADORES</td>
+							<td title="33 HORAS" class="fonte_t_0">LABORATÓRIO DE BANCO DE DADOS</td>
+						</tr>
+						<tr>
+							<td title="100 HORAS" class="fonte_t_1">ATIVIDADES COMPLEMENTARES
+							<td title="67 HORAS" class="fonte_t_1">LABORATÓRIO DE PROGRAMAÇÃO I</td>
+							</td>
+						<tr>
+							<td title="67 HORAS" class="fonte_t_0">BANCO DE DADOS</td>
+							<td title="67 HORAS" class="fonte_t_0">LABORATÓRIO DE PROGRAMAÇÃO II</td>
+						</tr>
+						<tr>
+							<td title="67 HORAS" class="fonte_t_1">BUSINESS INTELLIGENCE E BIG DATA</td>
+							<td title="67 HORAS" class="fonte_t_1">LÓGICA E CRIATIVIDADE</td>
+						</tr>
+						<tr>
+							<td title="67 HORAS" class="fonte_t_0">CÁLCULO I</td>
+							<td title="33 HORAS" class="fonte_t_0">MANUTENÇÃO DE SOFTWARE</td>
+						</tr>
+						<tr>
+							<td title="67 HORAS" class="fonte_t_1">DESENVOLVIMENTO DE GAMES I</td>
+							<td title="33 HORAS" class="fonte_t_1">MATEMÁTICA DISCRETA</td>
+						</tr>
+						<tr>
+							<td title="67 HORAS" class="fonte_t_0">DESENVOLVIMENTO DE GAMES II</td>
+							<td title="67 HORAS" class="fonte_t_0">PADRÕES DE PROJETO DE SOFTWARE</td>
+						</tr>
+						<tr>
+							<td title="40 HORAS" class="fonte_t_1">EMPREENDEDORISMO</td>
+							<td title="80 HORAS" class="fonte_t_1">PRÁTICAS DE LEITURA, INTERPRETAÇÃO E PRODUÇÃO DE TEXTOS</td>
+						</tr>
+						<tr>
+							<td title="67 HORAS" class="fonte_t_0">ENGENHARIA DE SOFTWARE I</td>
+							<td title="67 HORAS" class="fonte_t_0">PROGRAMAÇÃO MOBILE I</td>
+						</tr>
+						<tr>
+							<td title="67 HORAS" class="fonte_t_1">ENGENHARIA DE SOFTWARE II</td>
+							<td title="67 HORAS" class="fonte_t_1">PROGRAMAÇÃO MOBILE II</td>
+						</tr>
+						<tr>
+							<td title="150 HORAS" class="fonte_t_0">ESTÁGIO SUPERVISIONADO I</td>
+							<td title="67 HORAS" class="fonte_t_0">PROGRAMAÇÃO ORIENTADA OBJETOS I</td>
+						</tr>
+						<tr>
+							<td title="150 HORAS" class="fonte_t_1">ESTÁGIO SUPERVISIONADO II</td>
+							<td title="67 HORAS" class="fonte_t_1">ROGRAMAÇÃO ORIENTADA OBJETOS II</td>
+						</tr>
+						<tr>
+							<td title="80 HORAS" class="fonte_t_0">ESTATÍSTICA ELEMENTAR</td>
+							<td title="67 HORAS" class="fonte_t_0">PROGRAMAÇÃO PARA WEB I</td>
+						</tr>
+						<tr>
+							<td title="67 HORAS" class="fonte_t_1">ESTRUTURA DE DADOS I</td>
+							<td title="67 HORAS" class="fonte_t_1">PROGRAMAÇÃO PARA WEB II</td>
+						</tr>
+						<tr>
+							<td title="33 HORAS" class="fonte_t_0">ESTRUTURA DE DADOS II</td>
+							<td title="67 HORAS" class="fonte_t_0">PROJETO DE CONCLUSÃO DE CURSO I</td>
+						</tr>
+						<tr>
+							<td title="80 HORAS" class="fonte_t_1">ESTUDOS CONTEMPORÂNEOS</td>
+							<td title="67 HORAS" class="fonte_t_1">PROJETO DE CONCLUSÃO DE CURSO I</td>
+						</tr>
+						<tr>
+							<td title="33 HORAS" class="fonte_t_0">ÉTICA PROFISSIONAL, LEGISLAÇÃO E RESPONSABILIDADE SOCIAL</td>
+							<td title="67 HORAS" class="fonte_t_0">PROJETO DE CONCLUSÃO DE CURSO II</td>
+						</tr>
+						<tr>
+							<td title="67 HORAS" class="fonte_t_1">FRAMEWORK DE SOFTWARE</td>
+							<td title="67 HORAS" class="fonte_t_1">QUALIDADE DE SOFTWARE</td>
+						</tr>
+						<tr>
+							<td title="67 HORAS" class="fonte_t_0">GEOMETRIA ANALÍTICA E CÁLCULO VETORIAL</td>
+							<td title="67 HORAS" class="fonte_t_0">REDES DE COMPUTADORES</td>
+						</tr>
+						<tr>
+							<td title="80 HORAS" class="fonte_t_1">GESTÃO DE PESSOAS</td>
+							<td title="67 HORAS" class="fonte_t_1">REQUISITOS DE SOFTWARE</td>
+						</tr>
+						<tr>
+							<td title="67 HORAS" class="fonte_t_0">GESTÃO DE PROJETOS</td>
+							<td title="67 HORAS" class="fonte_t_0">SEGURANÇA DA INFORMAÇÃO</td>
+						</tr>
+						<tr>
+							<td title="80 HORAS" class="fonte_t_1">GESTÃO DO CONHECIMENTO</td>
+							<td title="67 HORAS" class="fonte_t_1">SISTEMAS DISTRIBUÍDOS</td>
+						</tr>
+						<tr>
+							<td title="33 HORAS" class="fonte_t_0">GOVERNANÇA DA TECNOLOGIA DA INFORMAÇÃO</td>
+							<td title="67 HORAS" class="fonte_t_0">SISTEMAS OPERACIONAIS</td>
+						</tr>
+						<tr>
+							<td title="40 HORAS" class="fonte_t_1">INTERAÇÃO HUMANO COMPUTADOR</td>
+							<td title="33 HORAS" class="fonte_t_1">TEORIA DA COMPUTAÇÃO</td>
+						</tr>
+						<tr>
+							<td title="40 HORAS" class="fonte_t_0">INTRODUÇÃO À ECONOMIA</td>
+							<td title="67 HORAS" class="fonte_t_0">TÓPICOS ESPECIAIS EM ENGENHARIA I</td>
+						</tr>
+						<tr>
+							<td title="40 HORAS" class="fonte_t_1">INTRODUÇÃO EM GESTÃO EMPRESARIAL</td>
+							<td title="67 HORAS" class="fonte_t_1">TÓPICOS ESPECIAIS EM ENGENHARIA I</td>	
+					</table>
+					<div style=" margin-left: 60px; margin-top: 60px;" class="docentesE"></div> <!--serve como uma box invisivel-->
+				</div>
+				
+				<div onmouseover="mostrar(btnTopo)" id="Docentes">
+					<h1 class="fonteg">Docentes</h1>
+					<div class="docentes">
+						<img src="Imagens/pablo.jpeg" height="104px" width="100px">
+						<h1 class="docentes_nome">PABLO RODRIGO SANCHES</h1>
+						<h1 class="docentes_info">DOUTOR<br>ANALISTA DE SISTEMAS<br>NA UNAERP DESDE FEVEREIRO/2011.</h1>
+					</div>
+
+					<div class="docentes">
+						<img src="Imagens/luciano.jpeg" height="104px" width="100px">
+						<h1 class="docentes_nome">LUCIANO ALBUQUERQUE<br>L. SARAIVA</h1>
+						<h1 class="docentes_info">MESTRADO EM CIENCIAS MÉDICAS.</h1>
+					</div>	
+
+					<div class="docentes">
+						<img src="Imagens/plotz.jpeg" height="104px" width="100px">
+						<h1 class="docentes_nome">RODRIGO DE OLIVEIRA PLOTZE</h1>
+						<h1 class="docentes_info">DOUTORADO EM VISÃO ARTIFICIAL<br>E MORFOMETRIA NA ANÁLISE.</h1>
+					</div>
+
+					<div class="docentes">
+						<img src="Imagens/ferreira.jpeg" height="104px" width="100px">
+						<h1 class="docentes_nome">JOSE FERREIRA DE SOUZA NETO</h1>
+						<h1 class="docentes_info">MESTRADO EM ENGENHARIA<br>DE PRODUCAO.</h1>
+					</div>	
+
+					<div class="docentes">
+						<img src="Imagens/carlos.jpeg" height="104px" width="100px">
+						<h1 class="docentes_nome">CARLOS ALVES DA SILVA</h1>
+						<h1 class="docentes_info">ESPECIALIZAÇÃO EM <br> BANCO DE DADOS.</h1>
+					</div>
+
+					<div class="docentes">
+						<img src="Imagens/fernando.jpeg" height="104px" width="100px">
+						<h1 class="docentes_nome">FERNANDO MARCO<br>PEREZ CAMPOS</h1>
+						<h1 class="docentes_info">MESTRADO EM ENGENHARIA<br>DE PRODUCAO.</h1>
+					</div>
+
+					<div class="docentes">
+						<img src="Imagens/ana.jpeg" height="104px" width="100px">
+						<h1 class="docentes_nome">ANA PAULA DO CARMO<br>M. FERRAZ</h1>
+						<h1 class="docentes_info">DOUTORA EM ENGENHARIA<br>DE PRODUCAO</h1>
+					</div>	
+
+					<div class="docentes">
+						<img src="Imagens/beatriz.jpeg" height="104px" width="100px">
+						<h1 class="docentes_nome">BEATRIZ SELAN</h1>
+						<h1 class="docentes_info">DOUTORADO EM ENGENHARIA<br>DE PRODUCAO</h1>
+					</div>
+				</div>
+
+				<div onmouseover="mostrar(btnTopo)" id="Infra">
+					<h1 class="fonteg">Infraestrutura</h1>
+						<h1 class="fontem">O curso de Engenharia de Software tem salas exclusivas reservadas no 
+							início de cada semestre em função do número de<br>alunos matriculados. As demais salas,
+							quando livres, poderão também atender os alunos desse curso.</h1>
+						<div style="margin-top: 20px;">
+							<h1 class="fontep"><span style="color:#16254c;opacity: 0.9;">Laboratório de Banco de Dados:</span> permite o desenvolvimento de aulas práticas e projetos
+								 na área de banco de dados com a realização de instalação, configuração e gerenciamento de sistemas gerenciadores de banco de dados. 
+								 Este laboratório é composto por microcomputadores interligados a sistemas gerenciadores de banco de dados, equipado com quadro branco e tela de projeção.</h1>
+
+							<h1 class="fontep"><span style="color:#16254c;opacity: 0.9;">Laboratório de Redes de Computadores:</span> permite o desenvolvimento de aulas práticas e projetos de redes de computadores
+								 com a realização de trabalhos em instalação e desenvolvimento de software de controle de redes e de manipulação de componentes de hardware
+								  e software. Este laboratório é composto por microcomputadores (terminais e servidores) interligados em redes (principal e alternativas)
+								   permitindo a experimentação de diversas instalações 	e configurações de na área de redes de computadores e sistemas distribuídos. </h1>
+
+							<h1 class="fontep"><span style="color:#16254c;opacity: 0.9;">Laboratório de Trabalhos Colaborativos:</span> atende as disciplinas de lógica, criatividade, inovação e estratégia.
+								 Tem por objetivo o desenvolvimento de trabalhos práticos que envolvem trabalhos em grupos e empreendedorismo, 
+								 permitindo que alunos trabalhem de forma colaborativa. Este Laboratório é composto por mesas redondas, puffs, lousas brancas panorâmicas e tela de projeção. </h1>
+
+							<h1 class="fontep"><span style="color: #16254c;opacity: 0.9;">Laboratório de Desenvolvimento de Sistemas:</span> permite o desenvolvimento de aulas práticas e projetos na área de desenvolvimento de sistemas por
+								 meio de ferramentas para levantamento de requisitos, análise e implementação de sistemas. Este laboratório é composto por microcomputadores interligados a 
+								 sistemas gerenciadores de banco de dados, servidores Web, equipado com lousas brancas panorâmicas e tela de projeção.</h1>
+							
+							<h1 class="fontep"><span style="color: #16254c;opacity: 0.9;">Laboratório de Informática para Atividades de Pesquisa e Ensino - LIAPE:</span> composto por oito salas (01A, 03A, 05A, 06A, 07A, 09A, 13A e 35A) com
+								 trinta e seis microcomputadores em cada uma, constantemente renovados com o objetivo de acompanhar a evolução tecnológica em hardware e software. Os computadores 
+								 estão ligados em rede Internet com taxa de transmissão de 100 Mbits em um espaço físico de 53,70 m2 cada sala, com acesso à portadores de necessidades especiais.
+								  As salas são isoladas de ruídos externos e com boa audição interna. Esses laboratórios atendem a todos os cursos da Universidade.</h1>	 
+						</div>
+					</div>
+
+				<div onmouseover="mostrar(btnTopo)" id="Eventos">
+					<h1 class="fonteg">Eventos</h1>
+					<h1 style="color:white;font-size: 25px;" class="fontem">Viagens Técnicas</h1>
+					<ul>
+						<li style="color: #ffdd21; text-shadow: 1px 1px  rgba(0, 0, 0, 0.623);" class="fontem">Luiza labs</li>
+							<h1 class="fontee">Em 2014, o Magazine Luiza criou o Luizalabs,
+								um laboratório de Tecnologia e Inovação, dentro do núcleo de Pesquisa e Desenvolvimento,
+								com o objetivo de criar produtos e serviços com foco no varejo,
+								oferecendo aos clientes mais benefícios e uma melhor experiência de compra. O Luiza labs se localiza em Franca-SP.</h1>
+							<img style="margin-left: 60px;" src="Imagens/luizalabs2.jfif" width="470" height="300">
+							<img style="margin-left: 60px;" src="Imagens/luizalabs3.jfif" width="470" height="300">
+							<iframe style="margin-left: 60px;border-style: none;margin-top: 10px;" src="Videos/LuizaLabs.mp4" width="470" height="300"></iframe>
+							<iframe style="margin-left: 60px;border-style: none;" src="Videos/LuizaLabs2.mp4" width="470" height="300"></iframe>
+						<li style="color: #ffdd21; text-shadow: 1px 1px  rgba(0, 0, 0, 0.623);" class="fontem">Dell</li>
+								<h1 class="fontee">Dell desenvolve, produz, dá suporte e vende uma grande variedade de computadores pessoais, servidores,
+									notebooks, dispositivos de armazenamento, switches de rede, PDAs, software, periféricos e mais.
+									De acordo com a lista Fortune 500 de 2005, a Dell é a 28ª maior empresa nos Estados Unidos (em vendas).
+									 Com muitas fabricas pelo mundo, a que os alunos foram visitar se localiza no Parque dos Pinheiros em Hortolândia-SP.</h1>
+								<img style="margin-left: 60px;" src="Imagens/dell.jfif" width="470" height="300">	
+						<li style="color: #ffdd21;" class="fontem">Endress+Hauser</li>
+							<h1 class="fontee">A Endress + Hauser, com sede na Suíça, é um fornecedor global de instrumentação e automação de processos 
+								operacionais e de laboratório. Em 2018, a empresa familiar gerou vendas líquidas de € 2.455 bilhões, registrou um lucro 
+								líquido de € 232,2 milhões e empregou 13.928 funcionários em todo o mundo, no Brasil a sede fica em Itatiba - SP</h1>
+							<img style="margin-left: 60px;"src="Imagens/endress.jpg" width="470" height="300">
+						<li style="color: #ffdd21;"class="fontem">BGS</li>
+							<h1 class="fontee">A Brasil Game Show (BGS) é a maior feira de games da América Latina e uma das maiores do mundo em público e área. 
+								Realizada pela primeira vez em 2009, inicialmente como Rio Game Show, na capital fluminense,
+								a BGS ocupa atualmente todos os pavilhões do ExpoCenter Norte, em São Paulo.</h1>
+							<img style="margin-left: 60px;" src="Imagens/bgs1.jfif" width="470" height="300">
+							<img style="margin-left: 60px;" src="Imagens/bgs2.jfif" width="500" height="300">
+					</ul>
+					<h1 style="color:white;font-size: 25px; margin-top: 40px;" class="fontem">Semana da Engenharia</h1>
+						<ul>
+							<li style="color: #ffdd21; text-shadow: 1px 1px rgba(0, 0, 0, 0.623);" class="fontem">Mini Cursos</li>
+								<h1 class="fontee">Na semana da Engenharia a instituição disponibiliza 3 minicursos extracurricular para o 
+									aluno escolher entre eles, esse ano foi Python, Linux e Versionamento (GitHub). O aluno poderá escolher um entre esses cursos,
+									ainda ganhando um diploma com horas complementar podendo abater as 100hrs que alunos tem na grade.</h1>
+								<img style="margin-left: 60px;" src="Imagens/mini_curso2.jpg" width="470" height="300">
+							<li style="color: #ffdd21; text-shadow: 1px 1px  rgba(0, 0, 0, 0.623);" class="fontem">Palestras Especializadas</li>
+								<h1 class="fontee">Este ano de 2019 tivemos uma palestra de segurança na web ministrado pelo grupo Ganesh estudantes da USP de São Carlos,
+									 com o intuito de mostrar aos alunos a importância de se preocupar com programas disponibilizados gratuitamente 
+									 e suas informações pelas redes sociais, podendo selas expostas</h1>
+								<img style="margin-left: 60px;" src="Imagens/Mini_Curso.jpg" width="470" height="300">
+							<li style="color: #ffdd21; text-shadow: 1px 1px  rgba(0, 0, 0, 0.623);" class="fontem">Campeonato de jogos E-sports</li>
+								<h1 class="fontee">Na semana da Engenharia, além de curso e palestras, temos campeonatos de jogos entre os alunos da área de TI,
+									os times são formados pelos próprios. O campeonato serve para integras os alunos de diferentes cursos na area de TI, mesmo podendo agregar
+									participantes de outros cursos. Este ano o jogo escolhido para o campeonato foi o League of Legends.</h1>
+								<iframe style="margin-left: 60px;" width="540" height="320" src="https://www.youtube.com/embed/ovTE-UEegiE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							</ul>
+					<h1 style="color:white;font-size: 25px; margin-top: 40px;" class="fontem">Eventos Unaerp</h1>
+						<ul>
+							<li style="color: #ffdd21; text-shadow: 1px 1px  rgba(0, 0, 0, 0.623);" class="fontem">CONIC</li>
+								<h1 class="fontee">O conic é um evento criado pela universidade, 
+											para a apresentações de trabalho "Projetos", seu objetivo principal é as apresentações de TCC e complementado com apresentações de trabalhos proposto no semestre(integrador).
+											trazendo pessoas de fora da instituição para ver os trabalhos desenvolvidos pelos grupos</h1>
+								<img style="margin-left: 60px;" src="Imagens/conic1.jpg" width="400" height="380">
+								<img style="margin-left: 60px;" src="Imagens/conic2.jpg" width="400" height="380">
+							<li style="color: #ffdd21; text-shadow: 1px 1px  rgba(0, 0, 0, 0.623);" class="fontem">INTERUNAERP</li>
+								<h1 class="fontee">O INTERUNAERP é o festival atlético onde reune todas as atleticas da universidade em confrontos diretos, quem somar mais pontos nas modalidades leva o troféu.Na ultima competição a Educação Fisica acabou se sagrando campeã!</h1>
+								<img style="margin-left: 60px;" src="Imagens/inter.jfif" width="470" height="300">
+								</ul>
+				</div>
+
+				<div onmouseover="mostrar(btnTopo)" id="Alunos">
+					<h1 class="fonteg">Alunos</h1>
+					<h1 class="fontem" style="font-size: 25px;">Feedback</h1>
+					<div style="float: left;">
+						<div class="alunos">
+							<h1 style="font-family:arial;color:#f44f22;font-size:13px;margin-left:14px;text-shadow: 1px 1px rgba(0, 0, 0, 0.158);">André Otavio - 2°Etapa</h1>
+							<h1 class="alunos_com">"Um curso onde foca na parte de programação desde o Básico até o mais avançado, mostrando para os alunos que o importante é ter a lógica."</h1>
+							<h1 style="font-family:arial;color:#f44f22;font-size:13px;margin-left:240px;text-shadow: 1px 1px rgba(0, 0, 0, 0.158);">@otavioandre</h1>
+						</div>
+
+						<div class="alunos">
+							<h1 style="font-family:arial;color:#f44f22;font-size:13px;margin-left:14px;text-shadow: 1px 1px rgba(0, 0, 0, 0.158);">Matheus Camelucci - 4°Etapa</h1>
+							<h1 class="alunos_com">"O conteúdo é bem formulado, com aulas teóricas bem fundamentadas e aulas práticas que tornam o aprendizado mais fácil e concreto."</h1>
+							<h1 style="font-family:arial;color:#f44f22;font-size:13px;margin-left:200px;text-shadow: 1px 1px rgba(0, 0, 0, 0.158);">@matheus_camelucci</h1>
+						</div>
+
+						<div class="alunos">
+							<h1 style="font-family:arial;color:#f44f22;font-size:13px;margin-left:14px;text-shadow: 1px 1px rgba(0, 0, 0, 0.158);">Guilherme Souza - 1°Etapa</h1>
+							<h1 class="alunos_com">"Como eu estou nas primeiras fases do curso,por enquanto está tendo bons resultados envolvendo assuntos que eu nem esperava que ia compor as aulas do curso..."</h1>
+							<h1 style="font-family:arial;color:#f44f22;font-size:13px;margin-left:230px;text-shadow: 1px 1px rgba(0, 0, 0, 0.158);margin-top: -15px;">@wiil_souza10</h1>
+						</div>
+
+						<div class="alunos">
+							<h1 style="font-family:arial;color:#f44f22;font-size:13px;margin-left:14px;text-shadow: 1px 1px rgba(0, 0, 0, 0.158);">Matheus Camelucci - 4°Etapa</h1>
+							<h1 class="alunos_com">"O curso apresenta as mais diversas disciplinas que são fundamentais para o desenvolvimento de um profissional apto a trabalhar no mercado e ser competitivo com os concorrentes."</h1>
+							<h1 style="font-family:arial;color:#f44f22;font-size:13px;margin-left:200px;text-shadow: 1px 1px rgba(0, 0, 0, 0.158);margin-top: -15px;">@matheus_camelucci</h1>
+						</div>
+					</div>
+					<h1 class="fontem" style="font-size: 25px;margin-top: 400px;">Perguntas Frequentes</h1>
+					<div>
+						<div id="um" class="perguntas">
+							<h1 style="margin-left: 7px;">Qual linguagem vocês trabalham ao decorrer do curso?</h1>
+						</div>
+						<!---->
+						<div style="margin-top: 5px;margin-left: 60px;" class="resposta">
+							<h1 style="margin-left: 7px;margin-right: 7px;">O curso propoe a ideia de não focar em linguagens e sim na logica de programação, porem no começo do curso trabalhamos com linguagens mais antigas e de facil compreensão.</h1>
+						</div>
+						<!--Final Caixa-->
+						<div id="dois" class="perguntas">
+							<h1 style="margin-left: 7px;margin-right: -7px;">Tem bastante vagas na area de engenheiro de software?</h1>
+						</div>
+						<!---->
+						<div style="margin-top: 5px;margin-left: 60px;" class="resposta">
+							<h1 style="margin-left: 7px;margin-right: 7px;">A um amplo e crescente mercado na area de TI, ser um Engenheiro de Software te possibilita a não atuar somento como engenheiro e sim como por exemplo analista de sistema, programador e entre outros.</h1>
+						</div>
+						<!--Final Caixa-->
+						<div id="tres" class="perguntas">
+							<h1 style="margin-left: 7px;margin-right: -7px;">Como as provas são aplicadas?</h1>
+						</div>
+						<!---->
+						<div style="margin-top: 5px;margin-left: 60px;" class="resposta">
+							<h1 style="margin-left: 7px;margin-right: 7px;">Todas as materias seguem o plano de ensino, tendo 1 prova parcial e 1 final (exame).As provas são aplicadas em sala de aula e a maioria manuscrito sem consulta.</h1>
+						</div>
+						<!--Final Caixa-->
+						<div id="quatro" class="perguntas">
+							<h1 style="margin-left: 7px;margin-right: 7px;">Qual a diferença de Engenharia de Software e outros cursos na area de TI?</h1>
+						</div>
+						<!---->
+						<div style="margin-top: 5px;margin-left: 60px;" class="resposta">
+							<h1 style="margin-left: 7px;margin-right: 7px;">O curso de Engenharia de Software foca na parte do desenvolvimento do sistema desde o levantamento de requisitos até a programação, com suas materias focadas em melhorar a logica do aluno e buscar um melhor e mais eficiente jeito de desenvolver um sistema.</h1>
+						</div>
+					</div>
+					<h1 style="float:right; margin-top: -390px;margin-right: 291px;" class="fontem">Turma 1</h1>
+					<img style="float:right; margin-top: -360px;margin-right: 250px;" src="Imagens/turma1.jpg" width="160" height="160">
+
+					<h1 style="float:right; margin-top: -190px;margin-right: 291px;" class="fontem">Turma 3</h1>
+					<img style="float:right; margin-top: -160px;margin-right: 250px;" src="Imagens/icone.png" width="160" height="160"> 
+				</div>
+	
+				<div onmouseover="mostrar(btnTopo)" id="Mais">
+					<h1 class="fonteg">+ Informações</h1>
+					<h1 style="font-size: 25px;margin-left: 39%;text-shadow: 1px 1px rgba(0, 0, 0, 0.459);color: #ffdd21;" class="fontem">Últimas Notícias</h1>
+					<div class="slider">			
+					<a href="https://exame.abril.com.br/carreira/tv-globo-itau-e-outras-empresas-recrutam-mais-de-200-hackers-em-evento/" target="_blank"><img onclick="slider(noticiatres,noticiaum,noticiadois)" style="margin-left: 20%;margin-right: 100000px; block;position: absolute;border-radius: 10px;" id="noticia1" src="Imagens/noticia1.jpg" width="40%" height="340"></li></a>
+						<a href="https://exame.abril.com.br/tecnologia/uma-parte-da-populacao-tera-que-aprender-a-programar-diz-ceo-da-pwc/" target="_blank"><img onclick="slider(noticiadois,noticiaum,noticiatres)" style="margin-left: 20%;display: none;position: absolute;border-radius: 10px;" id="noticia2" src="Imagens/noticia2.jpg" width="40%" height="340"></li></a>
+						<a href="https://exame.abril.com.br/mercados/uber-cai-mais-de-8-apos-novo-prejuizo-bilionario/" target="_blank"><img onclick="slider(noticiatres,noticiadois,noticiaum)" style="margin-left: 20%;display: none;position: absolute;border-radius: 10px;" id="noticia3" src="Imagens/noticia3.jpg" width="620" height="40%"></li></a>
+					</div>
+					<h1 style="margin-top:410px;margin-left: 15%;position:absolute;color: #ffdd21;font-size: 25px;" class="fontem">Tutoriais</h1>
+					<ul style="margin-top:450px;margin-left: 15%;float: left;">
+						<a href="http://linguagemc.com.br/" target="_blank"><li class="link" >Linguagem C</li></a>
+						<a href="https://www.udemy.com/" target="_blank"><li class="link" >Udemy</li></a>
+						<a href="https://www.youtube.com/watch?v=sTX0UEplF54&list=PLHz_AreHm4dkI2ZdjTwZA4mPMxWTfNSpR"><li class="link" >Curso em Video</li></a>
+						<a href="https://www.microsoft.com/pt-br/learning/training.aspx" target="_blank"><li class="link" >Microsoft</li></a>
+					</ul>
+					<h1 style="margin-top:410px;margin-left:55%;position:absolute;color: #ffdd21;font-size: 25px;" class="fontem">Sites</h1>
+					<ul	style="margin-top:450px;margin-left:33%;float: left;">
+						<a href="https://www.w3schools.com/default.asp" target="_blank"><li class="link">W3schools</li></a>
+						<a href="https://br.freepik.com/icones-gratis" target="blank"><li class="link" >Freepik</li></a>
+						<a href="https://github.com/" target="_blank"><li class="link">Github</li></a>
+						<a href="https://color.adobe.com/pt/create/color-wheel/" target="_blank"><li class="link" >Color-wheel</li></a>
+					</ul>
+					<h1 style="color: #ffdd21;margin-top: 700px;font-size: 25px;margin-left: 41%;" class="fontem">Vídeos indicados</h1>
+						<div style="margin-left: 80px;margin-top: 60px;">
+							<iframe width="380" height="200" src="https://www.youtube.com/embed/50k4dLKiRYI" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<iframe width="380" height="200" src="https://www.youtube.com/embed/APmtMvaYMLg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<iframe width="380" height="200" src="https://www.youtube.com/embed/kjhu1LEmRpY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<iframe width="380" height="200" src="https://www.youtube.com/embed/NZlIYr1slAk" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<iframe width="380" height="200" src="https://www.youtube.com/embed/HAJIfk-S4Fc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+							<iframe width="380" height="200" src="https://www.youtube.com/embed/zGWsZv6Ttzc" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+					</div>
+					<h1 style="color: #ffdd21;margin-top: 100px;font-size: 25px;margin-left: 41%;" class="fontem">Vagas divulgadas</h1>
+					<div>
+						<a href="https://br.jobrapido.com/jobpreview/71329799?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic" target="blank"><h1  class="vagas" id="t">Programador Web C#</h1></a>
+						<a href="https://br.jobrapido.com/jobpreview/71280027?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic" target="blank"><h1  class="vagas">Analista Programador</h1></a>
+						<a href="https://www.linkedin.com/jobs/view/1538960779/" target="blank"><h1 class="vagas">Programador SQL</h1></a>
+						<a href="https://neuvoo.com.br/view/?id=582cd1e177b6&utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic" target="blank"><h1 class="vagas">Programador Fullstack</h1></a>
+						<a href="https://empregos.listapa.com.br/detalhe-vaga-de-emprego/3850458/programador-java?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic" target="blank"><h1 class="vagas">Programador Java</h1></a>
+						<a href="https://www.balcaodeempregos.com.br/vaga-visualizar/1529629/estagio-programador-redes-sociais-franca-sp?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic" target="blank"><h1 class="vagas">Estágio Programador</h1></a>
+					</div>
+					<div style="height: 400px;"></div>
+				</div>
+			<script>
+				var btnTopo = document.getElementById("topo");
+				var noticiaum = document.getElementById("noticia1");
+				var noticiadois = document.getElementById("noticia2");
+				var noticiatres = document.getElementById("noticia3");
+
+				function slider(foto1,foto2,foto3){
+					var foto1,foto2,foto3;
+						foto1.style.display="none";
+						foto2.style.display="none";
+						foto3.style.display="block";
+					}
+					function mostrar(resp){
+						var resp
+						resp.style.display="block";
+					}
+					function ocultar(resp){
+						var resp
+						resp.style.display="none";
+					}
+			</script>
+	</body> 	
+</html>
